@@ -19,7 +19,7 @@
 
 <body>
   <!-- HEADER -->
-  <!-- <header class="header">
+  <header class="header header-mob">
     <div class="container header-container">
       <nav class="nav">
         <a class="logo-header logo link" href="">Web<span class="studio">Studio</span></a>
@@ -36,7 +36,7 @@
         </ul>
       </nav>
       <address class="contacts-header">
-        <ul class="contacts list">
+        <ul class="contacts-list list">
           <li class="contacts-item">
             <a class="contacts-links link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
@@ -45,17 +45,22 @@
           </li>
         </ul>
       </address>
+      <button class="header-menu-btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="" width="32" height="22">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
     </div>
-  </header> -->
+  </header>
 
   <main>
     <!-- SECTION 1 -->
-    <!-- <section class="hero-section section">
-      <div class="hero-container container">
+    <section class="hero-section">
+      <div class="hero-container">
         <h1 class="main-title">Effective Solutions for Your Business</h1>
         <button class="hero-btn" type="button" data-modal-open>Order Service</button>
       </div>
-    </section> -->
+    </section>
     <!-- SECTION 2 -->
     <section class="features-section section">
       <div class="features-container container">
@@ -118,14 +123,26 @@
         <h2 class="what-title">What are we doing</h2>
         <ul class="what-list list">
           <li class="what-list-item">
-            <img src="./images/section2/img1.jpg" width="360" alt="create your own perfect website" loading="lazy" />
+            <picture>
+              <source media="(min-width: 320px)"
+                srcset="./images/section2/img1.jpg 1x, ./images/section2/img1@2x.jpg 2x" type="image/jpg" />
+              <img src="./images/section2/img1.jpg" width="360" alt="create your own perfect website" loading="lazy" />
+            </picture>
           </li>
           <li class="what-list-item">
-            <img src="./images/section2/img2.jpg" width="360" alt="create best applications" loading="lazy" />
+            <picture>
+              <source media="(min-width: 320px)"
+                srcset="./images/section2/img2.jpg 1x, ./images/section2/img2@2x.jpg 2x" type="image/jpg" />
+              <img src="./images/section2/img2.jpg" width="360" alt="create best applications" loading="lazy" />
+            </picture>
           </li>
           <li class="what-list-item">
-            <img src="./images/section2/img3.jpg" width="360" alt="synchronize applications with desktop programs"
-              loading="lazy" />
+            <picture>
+              <source media="(min-width: 320px)"
+                srcset="./images/section2/img3.jpg 1x, ./images/section2/img3@2x.jpg 2x" type="image/jpg" />
+              <img src="./images/section2/img3.jpg" width="360" alt="synchronize applications with desktop programs"
+                loading="lazy" />
+            </picture>
           </li>
         </ul>
       </div>
@@ -136,7 +153,8 @@
         <h2 class="what-title">Our Team</h2>
         <ul class="team-cards-list list">
           <li class="team-list-item">
-            <img src="./images/section3/TeamCard1/img.jpg" width="264" alt="Mark Guerrero" />
+            <img srcset="./images/section3/TeamCard1/img.jpg 1x, ./images/section3/TeamCard1/img@2x.jpg 2x"
+              src="./images/section3/TeamCard1/img.jpg" width="264" alt="Mark Guerrero" loading="lazy" />
             <div class="team-cards-content">
               <h3 class="card-name">Mark Guerrero</h3>
               <p class="card-text">Product Designer</p>
@@ -177,7 +195,8 @@
             </div>
           </li>
           <li class="team-list-item">
-            <img src="./images/section3/TeamCard2/img.jpg" width="264" alt="Tom Ford" />
+            <img srcset="./images/section3/TeamCard2/img.jpg 1x, ./images/section3/TeamCard2/img@2x.jpg 2x"
+              src="./images/section3/TeamCard2/img.jpg" width="264" alt="Tom Ford" loading="lazy" />
             <div class="team-cards-content">
               <h3 class="card-name">Tom Ford</h3>
               <p class="card-text">Frontend Developer</p>
@@ -218,7 +237,8 @@
             </div>
           </li>
           <li class="team-list-item">
-            <img src="./images/section3/TeamCard3/img.jpg" width="264" alt="Camila Garcia" />
+            <img srcset="./images/section3/TeamCard3/img.jpg 1x, ./images/section3/TeamCard3/img@2x.jpg 2x"
+              src="./images/section3/TeamCard3/img.jpg" width="264" alt="Camila Garcia" loading="lazy" />
             <div class="team-cards-content">
               <h3 class="card-name">Camila Garcia</h3>
               <p class="card-text">Marketing</p>
@@ -259,7 +279,8 @@
             </div>
           </li>
           <li class="team-list-item">
-            <img src="./images/section3/TeamCard4/img.jpg" width="264" alt="Daniel Wilson" />
+            <img srcset="./images/section3/TeamCard4/img.jpg 1x, ./images/section3/TeamCard4/img@2x.jpg 2x"
+              src="./images/section3/TeamCard4/img.jpg" width="264" alt="Daniel Wilson" loading="lazy" />
             <div class="team-cards-content">
               <h3 class="card-name">Daniel Wilson</h3>
               <p class="card-text">UI Designer</p>
@@ -303,7 +324,7 @@
       </div>
     </section>
     <!-- SECTION 5 -->
-    <!-- <section class="customers-section section">
+    <section class="customers-section section">
       <div class="container">
         <h2 class="what-title">Customers</h2>
         <ul class="customers-list list">
@@ -351,11 +372,11 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
   </main>
 
   <!-- FOOTER -->
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="footer-container container">
       <div class="footer-logo-container">
         <a class="footer-logo logo link" href="">Web<span class="studio">Studio</span></a>
@@ -413,7 +434,7 @@
         </form>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
   <!-- MODAL WINDOW -->
   <div class="backdrop is-hidden" data-modal>
@@ -481,8 +502,75 @@
     </div>
   </div>
 
+  <!-- MOBILE MENU -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="btn-close menu-toggle js-close-menu">
+      <svg class="btn-close-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="mob-menu list">
+      <li class="mob-menu-item">
+        <a class="mob-menu-link link current" href="./index.html">Studio</a>
+      </li>
+      <li class="mob-menu-item">
+        <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+      </li>
+      <li class="mob-menu-item">
+        <a class="mob-menu-link link" href="">Contacts</a>
+      </li>
+    </ul>
+    <ul class="mob-contacts list">
+      <li class="mob-contact-item"><a class="mob-contacts-link link accent" href="tel:+110001111111">+11 (000)
+          111-11-11</a>
+      </li>
+      <li class="mob-contact-item"><a class="mob-contacts-link link"
+          href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+    </ul>
+
+    <ul class="mob-soc-list soc-media-list list">
+      <li class="mob-soc-item soc-media-item">
+        <a class="mob-soc-link soc-media-link link" href="" target="_blank" rel="noopener noreferrer"
+          aria-label="instagram link">
+          <svg class="mob-soc-icon soc-media-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mob-soc-item soc-media-item">
+        <a class="mob-soc-link soc-media-link link" href="" target="_blank" rel="noopener noreferrer"
+          aria-label="twitter link">
+          <svg class="mob-soc-icon soc-media-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mob-soc-item soc-media-item">
+        <a class="mob-soc-link soc-media-link link" href="" target="_blank" rel="noopener noreferrer"
+          aria-label="facebook link">
+          <svg class="mob-soc-icon soc-media-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mob-soc-item soc-media-item">
+        <a class="mob-soc-link soc-media-link link" href="" target="_blank" rel="noopener noreferrer"
+          aria-label="linkedin link">
+          <svg class="mob-soc-icon soc-media-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+
   <!-- JS -->
-  <!-- <script src="./js/modal.js"></script> -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
